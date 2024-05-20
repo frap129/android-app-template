@@ -1,0 +1,63 @@
+[versions]
+accompanist-drawablepainter = "0.32.0"
+activity-compose = "1.9.0"
+agp = "8.1.4"
+androidx-test-ext-junit = "1.1.5"
+composeBom = "2024.01.00"
+compose-compiler = "1.5.10"
+core-ktx = "1.13.1"
+datastore= "1.1.1"
+espresso-core = "3.5.1"
+junit = "4.13.2"
+koin = "3.5.6"
+kotlin = "1.9.22"
+kotlinx-coroutines-core = "1.7.3"
+ksp = "1.9.22-1.0.17"
+ktlint = "12.1.1"
+lifecycle = "2.8.0"
+navigation-compose = "2.7.7"
+timber = "5.0.1"
+
+[libraries]
+android-tools-build-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+androidx-datastore = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+androidx-lifecycle-compiler = { module = "androidx.lifecycle:lifecycle-compiler", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-service = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation-compose" }
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+compose-drawablepainter = { module = "com.google.accompanist:accompanist-drawablepainter", version.ref = "accompanist-drawablepainter" }
+compose-foundation-android = { group = "androidx.compose.foundation", name = "foundation-android" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android"}
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose"}
+koin-compose = { module = "io.insert-koin:koin-compose"}
+kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines-core" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines-core" }
+test-androidx-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+test-compose-ui-testManifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+test-junit = { group = "junit", name = "junit", version.ref = "junit" }
+util-timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+androidTest = { id = "com.android.test", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinSymbolProcessor = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
+modular-android-application = { id = "modular.android.application", version = "unspecified" }
+modular-android-hiddenapi = { id = "modular.android.hiddenapi", version = "unspecified" }
+modular-android-library = { id = "modular.android.library", version = "unspecified" }
+modular-android-test = { id = "modular.android.test", version = "unspecified" }
+modular-compose = { id = "modular.compose", version = "unspecified" }
