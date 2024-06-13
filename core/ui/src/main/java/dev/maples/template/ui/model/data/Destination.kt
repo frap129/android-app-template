@@ -7,6 +7,7 @@ import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.runtime.Composable
+import androidx.navigation.NamedNavArgument
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavController
 import androidx.navigation.NavDeepLink
@@ -31,6 +32,7 @@ open class Destination(
     open val exitTransition: (AnimatedContentTransitionScope<NavBackStackEntry>.() -> ExitTransition?)? = {
         fadeOut(animationSpec = tween(ANIMATION_DURATION))
     },
+    open val arguments: List<NamedNavArgument> = emptyList(),
     open val showNavBar: Boolean = false,
     open val navBarItem: DestinationNavBarItem? = null
 )

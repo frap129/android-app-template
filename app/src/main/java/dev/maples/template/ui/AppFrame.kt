@@ -112,6 +112,7 @@ fun App() {
                                 dest.content(navController, navBackStackEntry)
                             },
                             deepLinks = dest.deepLinks,
+                            arguments = dest.arguments,
                             enterTransition = dest.enterTransition,
                             exitTransition = dest.exitTransition
                         )
