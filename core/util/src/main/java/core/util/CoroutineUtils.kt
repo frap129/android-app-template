@@ -1,4 +1,4 @@
-package dev.maples.template.util
+package core.util
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

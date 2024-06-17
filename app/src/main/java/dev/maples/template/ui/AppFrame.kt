@@ -22,9 +22,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import dev.maples.template.ui.model.data.Destination
-import dev.maples.template.ui.model.data.DestinationNavBarItem
-import dev.maples.template.ui.theme.AppTheme
+import core.ui.R
+import core.ui.model.data.Destination
+import core.ui.model.data.DestinationNavBarItem
+import core.ui.theme.AppTheme
 import org.koin.androidx.compose.KoinAndroidContext
 import org.koin.core.annotation.KoinExperimentalAPI
 

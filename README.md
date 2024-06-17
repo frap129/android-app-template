@@ -3,7 +3,7 @@ A staring point for creating a new android app repo, with many tools and pattern
 
 - Compose
 - Jetpack Navigation
-	- Made more modular using [Destinations](core/ui/src/main/java/dev/maples/template/ui/model/data/Destination.kt)
+	- Made more modular using [Destinations](core/ui/src/main/java/core/ui/model/data/Destination.kt)
 	- Deep link support
 - Koin dependency injection
 - ktlint and EditorConfig for code style

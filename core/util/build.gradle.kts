@@ -4,5 +4,5 @@ plugins {
 }
 
 android {
-    namespace = "dev.maples.template.util"
+    namespace = "core.util"
 }

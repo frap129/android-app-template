@@ -4,5 +4,5 @@ plugins {
 }
 
 android {
-    namespace = "dev.maples.template.ui"
+    namespace = "core.ui"
 }

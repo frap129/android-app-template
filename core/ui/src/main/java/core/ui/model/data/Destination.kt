@@ -1,4 +1,4 @@
-package dev.maples.template.ui.model.data
+package core.ui.model.data
 
 import androidx.compose.animation.AnimatedContentTransitionScope
 import androidx.compose.animation.EnterTransition
@@ -11,7 +11,7 @@ import androidx.navigation.NamedNavArgument
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavController
 import androidx.navigation.NavDeepLink
-import dev.maples.template.ui.theme.ANIMATION_DURATION
+import core.ui.theme.ANIMATION_DURATION
 
 /*
  * A "Destination" represents a screen or flow that can be navigated to

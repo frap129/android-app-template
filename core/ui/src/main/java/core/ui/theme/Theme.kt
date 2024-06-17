@@ -1,4 +1,4 @@
-package dev.maples.template.ui.theme
+package core.ui.theme
 
 import android.app.Activity
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -11,7 +11,7 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.res.colorResource
 import androidx.core.view.WindowCompat
-import dev.maples.template.ui.R
+import core.ui.R
 
 fun getColorScheme(accent: Color, backgroundLight: Color, backgroundMid: Color, backgroundDark: Color) = darkColorScheme(
     primary = backgroundMid,
