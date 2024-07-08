@@ -35,7 +35,7 @@ class AndroidTestConventionPlugin : Plugin<Project> {
             }
 
             extensions.configure<TestExtension> {
-                configureAndroid(this)
+                configureAndroid(target, this)
             }
 
             val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")

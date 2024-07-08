@@ -1,5 +1,6 @@
 # Android App Template
-A staring point for creating a new android app repo, with many tools and patterns for modern Android development already implemented, such as:
+A staring point for creating a new android app repo, with many tools and patterns for modern Android
+development already implemented, such as:
 
 - Compose
 - Jetpack Navigation
@@ -10,12 +11,33 @@ A staring point for creating a new android app repo, with many tools and pattern
 - Timber for logging
 - Multi-module project structure
 - Gradle convention plugins to simplify creating new:
-	-  App modules
+	- App modules
 	- Library modules
 	- Modules with Compose 
 	- Modules with Android Hidden Api access
+- Dynamic signing configuration
 
 And more to come
+
+## Dynamic Signing Configuration
+This template supports providing custom signing config(s) via the `keystore.properties` pattern. If
+`keystore.properties` exists in the root of the project, the values defined in it will be used for
+the app module's signing config(s), otherwise the default is used.
+
+`keystore.properties` supports both a singular signing config, and per-variant signing configs. As
+an example, the following `keystore.properties` uses the generic config for all variants except
+release, which has its own signing config defines.
+```
+storePassword=example
+keyPassword=example
+keyAlias=example
+storeFile=example.keystore
+
+release.storePassword=example
+release.keyPassword=example
+release.keyAlias=example
+release.storeFile=release.keystore
+```
 
 Check out the `example` branch for some simple implementations of modules.
 

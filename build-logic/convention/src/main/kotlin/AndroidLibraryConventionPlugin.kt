@@ -33,7 +33,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
 
             configureAndroidBase(extensions.getByType<BaseExtension>())
             extensions.configure<LibraryExtension> {
-                configureAndroid(this)
+                configureAndroid(target, this)
             }
         }
     }

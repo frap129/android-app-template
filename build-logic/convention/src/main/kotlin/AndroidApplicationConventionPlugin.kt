@@ -33,7 +33,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
 
             configureAndroidBase(extensions.getByType<BaseExtension>())
             extensions.configure<BaseAppModuleExtension> {
-                configureAndroid(commonExtension = this)
+                configureAndroid(target, this)
             }
         }
     }
