@@ -42,7 +42,12 @@ internal fun configureAndroid(target: Project, commonExtension: CommonExtension<
                     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
                     buildTypes.names.forEach { variant ->
                         val prefix = if (keystoreProperties.keys.any { (it as String).contains(variant) }) "$variant." else ""
-                        create(variant) {
+                        val config = when (variant) {
+                            "debug" -> getByName(variant)
+                            else -> create(variant)
+                        }
+
+                        config.apply {
                             keyAlias = keystoreProperties["${prefix}keyAlias"] as String
                             keyPassword = keystoreProperties["${prefix}keyPassword"] as String
                             storeFile = target.rootProject.file(keystoreProperties["${prefix}storeFile"] as String)
