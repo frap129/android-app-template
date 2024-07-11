@@ -8,6 +8,7 @@ development already implemented, such as:
 	- Deep link support
 - Koin dependency injection
 - ktlint and EditorConfig for code style
+    - Run configurations for checking and autoformat included
 - Timber for logging
 - Multi-module project structure
 - Gradle convention plugins to simplify creating new:
