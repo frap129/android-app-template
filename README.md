@@ -1,5 +1,5 @@
 # Android App Template
-A staring point for creating a new android app repo, with many tools and patterns for modern Android
+A starting point for creating a new android app repo, with many tools and patterns for modern Android
 development already implemented, such as:
 
 - Compose
@@ -18,26 +18,6 @@ development already implemented, such as:
 - Dynamic signing configuration
 
 And more to come
-
-## Dynamic Signing Configuration
-This template supports providing custom signing config(s) via the `keystore.properties` pattern. If
-`keystore.properties` exists in the root of the project, the values defined in it will be used for
-the app module's signing config(s), otherwise the default is used.
-
-`keystore.properties` supports both a singular signing config, and per-variant signing configs. As
-an example, the following `keystore.properties` uses the generic config for all variants except
-release, which has its own signing config defines.
-```
-storePassword=example
-keyPassword=example
-keyAlias=example
-storeFile=example.keystore
-
-release.storePassword=example
-release.keyPassword=example
-release.keyAlias=example
-release.storeFile=release.keystore
-```
 
 Check out the `example` branch for some simple implementations of modules.
 
@@ -116,3 +96,23 @@ feature refers to a user-facing screen, set of related screens, or a user flow. 
 define one `destination`, which is the entry point for navigating to that feature in app. Features
 can navigate between one another, but should not have any build time dependency on one another. For
 cleanliness, `feature` modules should only depend on `core` modules and external libraries.
+
+### Dynamic Signing Configuration
+This template supports providing custom signing config(s) via the `keystore.properties` pattern. If
+`keystore.properties` exists in the root of the project, the values defined in it will be used for
+the app module's signing config(s), otherwise the default is used.
+
+`keystore.properties` supports both a singular signing config, and per-variant signing configs. As
+an example, the following `keystore.properties` uses the generic config for all variants except
+release, which has its own signing config defines.
+```
+storePassword=example
+keyPassword=example
+keyAlias=example
+storeFile=example.keystore
+
+release.storePassword=example
+release.keyPassword=example
+release.keyAlias=example
+release.storeFile=release.keystore
+```
