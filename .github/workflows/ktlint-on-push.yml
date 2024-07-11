@@ -1,0 +1,30 @@
+name: Run ktlint on push
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  ktlint:
+    name: Run ktlint formatter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Configure git
+        run: |
+          git config user.name "Github Action"
+          git config user.email "<>"
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: zulu
+          java-version: 17
+      - name: Format
+        run: bash ./gradlew ktlintFormat
+      - name: Commit and push
+        env:
+          BRANCH: ${{ github.ref }}
+        run: |
+          git commit -a -m "chore: ktlint autoformat"
+          git push origin ${BRANCH}
