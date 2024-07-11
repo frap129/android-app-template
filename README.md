@@ -39,7 +39,7 @@ The `build-logic` directory is for code that is used in building your app, not a
 app itself.
 
 ##### convention
-The `build-logic:convention` module provides a set of gradle plugins that s`implify creating new modules. These
+The `build-logic:convention` module provides a set of gradle plugins that simplify creating new modules. These
 include plugins for creating new:
 - Application Modules
 - Library Modules
@@ -47,7 +47,7 @@ include plugins for creating new:
 - Hidden API Modules
 - Compose Modules
 
-These plugins can be combined to suit your needs, which the exception that a modules can only be an
+These plugins can be combined to suit your needs, which the exception that a module can only be an
 application or a library, not both. For example, if you are creating a new `core` module that relies
 on hidden system APIs and has tests for its functionality, the `build.gradle` would look something
 like:
