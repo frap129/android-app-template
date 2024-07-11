@@ -23,6 +23,12 @@ Check out the `example` branch for some simple implementations of modules.
 
 ## Getting Started
 
+### Commit Format
+This repo follows the [ConventionalCommits](https://www.conventionalcommits.org/en/v1.0.0/#specification)
+v1.0.0 specification for commit formatting. For cleanliness, ease of reading, and easy changelog
+generation, it is recommended that you maintain this after starting a new project with this
+template.
+
 ### Module Structure
 This template uses a multi-module structure to encourage separation of different components.
 
