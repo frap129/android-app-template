@@ -1,0 +1,13 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:app
+dev.maples.template
+module:lifecycle
+core.lifecycle
+module:ui
+core.ui
+core.ui.model.data
+core.ui.theme
+module:util
+core.util

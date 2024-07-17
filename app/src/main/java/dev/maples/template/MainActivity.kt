@@ -7,10 +7,12 @@ import core.ui.App
 import core.ui.model.data.Destination
 
 class MainActivity : TemplateActivity() {
-    /*
-     * The destinations list holds Destination objects for all navigable screens
-     * in the app. This list is consumed by NavHost to add the defined routes to
+    /**
+     * Holds Destination objects for all navigable screens in the app.
+     * This list is consumed by NavHost to add the defined routes to
      * the NavGraph.
+     *
+     * @property destinations a list of [core.ui.model.data.Destination]
      */
     private val destinations: List<Destination> = listOf()
 

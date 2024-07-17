@@ -9,13 +9,30 @@ import org.koin.dsl.module
 import timber.log.Timber
 
 class MainApplication : Application() {
+    /**
+     * A Koin module containing a reference to the MainApplication class.
+     *
+     * @property appModule Koin Module for the Application object
+     */
     private val appModule = module {
         single<MainApplication> { this@MainApplication }
     }
 
+    /**
+     * A Koin module containing references to each repository class used
+     * throughout the project.
+     *
+     * @property repoModule Koin Module for Repositories
+     */
     private val repoModule = module {
     }
 
+    /**
+     * A Koin module containing references to each ViewModel class used
+     * throughout the project.
+     *
+     * @property viewModelModule Koin Module for ViewModels
+     */
     private val viewModelModule = module {
     }
 

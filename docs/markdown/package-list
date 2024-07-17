@@ -1,0 +1,46 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:core.lifecycle////PointingToDeclaration/lifecycle/lifecycle/core.lifecycle/index.md
+$dokka.location:core.lifecycle/MainApplication///PointingToDeclaration/lifecycle/lifecycle/core.lifecycle/-main-application/index.md
+$dokka.location:core.lifecycle/MainApplication/MainApplication/#/PointingToDeclaration/lifecycle/lifecycle/core.lifecycle/-main-application/-main-application.md
+$dokka.location:core.lifecycle/MainApplication/onCreate/#/PointingToDeclaration/lifecycle/lifecycle/core.lifecycle/-main-application/on-create.md
+$dokka.location:core.lifecycle/TemplateActivity///PointingToDeclaration/lifecycle/lifecycle/core.lifecycle/-template-activity/index.md
+$dokka.location:core.lifecycle/TemplateActivity/TemplateActivity/#/PointingToDeclaration/lifecycle/lifecycle/core.lifecycle/-template-activity/-template-activity.md
+$dokka.location:core.ui.model.data////PointingToDeclaration/ui/ui/core.ui.model.data/index.md
+$dokka.location:core.ui.model.data/Destination///PointingToDeclaration/ui/ui/core.ui.model.data/-destination/index.md
+$dokka.location:core.ui.model.data/Destination/Destination/#kotlin.String#kotlin.Function2[androidx.navigation.NavController,androidx.navigation.NavBackStackEntry,kotlin.Unit]#kotlin.collections.List[androidx.navigation.NavDeepLink]#kotlin.Function1[androidx.compose.animation.AnimatedContentTransitionScope[androidx.navigation.NavBackStackEntry],androidx.compose.animation.EnterTransition?]?#kotlin.Function1[androidx.compose.animation.AnimatedContentTransitionScope[androidx.navigation.NavBackStackEntry],androidx.compose.animation.ExitTransition?]?#kotlin.collections.List[androidx.navigation.NamedNavArgument]#kotlin.Boolean#core.ui.model.data.DestinationNavBarItem?/PointingToDeclaration/ui/ui/core.ui.model.data/-destination/-destination.md
+$dokka.location:core.ui.model.data/Destination/arguments/#/PointingToDeclaration/ui/ui/core.ui.model.data/-destination/arguments.md
+$dokka.location:core.ui.model.data/Destination/content/#/PointingToDeclaration/ui/ui/core.ui.model.data/-destination/content.md
+$dokka.location:core.ui.model.data/Destination/deepLinks/#/PointingToDeclaration/ui/ui/core.ui.model.data/-destination/deep-links.md
+$dokka.location:core.ui.model.data/Destination/enterTransition/#/PointingToDeclaration/ui/ui/core.ui.model.data/-destination/enter-transition.md
+$dokka.location:core.ui.model.data/Destination/exitTransition/#/PointingToDeclaration/ui/ui/core.ui.model.data/-destination/exit-transition.md
+$dokka.location:core.ui.model.data/Destination/navBarItem/#/PointingToDeclaration/ui/ui/core.ui.model.data/-destination/nav-bar-item.md
+$dokka.location:core.ui.model.data/Destination/route/#/PointingToDeclaration/ui/ui/core.ui.model.data/-destination/route.md
+$dokka.location:core.ui.model.data/Destination/showNavBar/#/PointingToDeclaration/ui/ui/core.ui.model.data/-destination/show-nav-bar.md
+$dokka.location:core.ui.model.data/DestinationNavBarItem///PointingToDeclaration/ui/ui/core.ui.model.data/-destination-nav-bar-item/index.md
+$dokka.location:core.ui.model.data/DestinationNavBarItem/DestinationNavBarItem/#kotlin.Int#kotlin.String/PointingToDeclaration/ui/ui/core.ui.model.data/-destination-nav-bar-item/-destination-nav-bar-item.md
+$dokka.location:core.ui.model.data/DestinationNavBarItem/icon/#/PointingToDeclaration/ui/ui/core.ui.model.data/-destination-nav-bar-item/icon.md
+$dokka.location:core.ui.model.data/DestinationNavBarItem/title/#/PointingToDeclaration/ui/ui/core.ui.model.data/-destination-nav-bar-item/title.md
+$dokka.location:core.ui.theme////PointingToDeclaration/ui/ui/core.ui.theme/index.md
+$dokka.location:core.ui.theme//ANIMATION_DURATION/#/PointingToDeclaration/ui/ui/core.ui.theme/-a-n-i-m-a-t-i-o-n_-d-u-r-a-t-i-o-n.md
+$dokka.location:core.ui.theme//AppTheme/#kotlin.Boolean#kotlin.Boolean#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/ui/ui/core.ui.theme/-app-theme.md
+$dokka.location:core.ui.theme//getColorScheme/#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color/PointingToDeclaration/ui/ui/core.ui.theme/get-color-scheme.md
+$dokka.location:core.ui.theme//getTypography/#/PointingToDeclaration/ui/ui/core.ui.theme/get-typography.md
+$dokka.location:core.ui////PointingToDeclaration/ui/ui/core.ui/index.md
+$dokka.location:core.ui//App/#kotlin.collections.List[core.ui.model.data.Destination]/PointingToDeclaration/ui/ui/core.ui/-app.md
+$dokka.location:core.ui//AppFrame/#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/ui/ui/core.ui/-app-frame.md
+$dokka.location:core.util////PointingToDeclaration/util/util/core.util/index.md
+$dokka.location:core.util//launchInBackground/#kotlin.coroutines.SuspendFunction1[kotlinx.coroutines.CoroutineScope,kotlin.Unit]/PointingToDeclaration/util/util/core.util/launch-in-background.md
+$dokka.location:dev.maples.template////PointingToDeclaration/app/app/dev.maples.template/index.md
+$dokka.location:dev.maples.template/MainActivity///PointingToDeclaration/app/app/dev.maples.template/-main-activity/index.md
+$dokka.location:dev.maples.template/MainActivity/MainActivity/#/PointingToDeclaration/app/app/dev.maples.template/-main-activity/-main-activity.md
+module:app
+dev.maples.template
+module:lifecycle
+core.lifecycle
+module:ui
+core.ui
+core.ui.model.data
+core.ui.theme
+module:util
+core.util
