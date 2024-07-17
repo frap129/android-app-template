@@ -1,0 +1,38 @@
+# doc: https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
+name: Lint PR
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - labeled
+      - synchronize # when PR branch is updated
+# only run one workflow at a time and kill the others
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  pr_validator:
+    name: run linters
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const prValidator = require('./.github/workflows/prValidator.js')
+            const script = require('./.github/workflows/checkboxes.js')
+
+
+            // get newest PR because we might not have the most up to date in context.payload
+            const repo = context.repo;
+            let payload = {
+              pull_number: context.payload.pull_request.number,
+            }
+            payload = Object.assign({}, repo, payload)
+            const { data: pr } = await github.rest.pulls.get(payload);
+
+
+            await prValidator.github_runner({github, pr, repo, core})
+            await script({github, pr, repo})
