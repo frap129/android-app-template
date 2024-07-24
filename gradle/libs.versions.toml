@@ -6,6 +6,7 @@ androidx-test-ext-junit = "1.1.5"
 composeBom = "2024.06.00"
 core-ktx = "1.13.1"
 datastore= "1.1.1"
+dokka = "1.9.20"
 espresso-core = "3.5.1"
 junit = "4.13.2"
 koin = "3.5.6"
@@ -16,7 +17,6 @@ ktlint = "12.1.1"
 lifecycle = "2.8.3"
 navigation-compose = "2.7.7"
 timber = "5.0.1"
-dokka = "1.9.20"
 
 [libraries]
 android-tools-build-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
@@ -59,7 +59,6 @@ kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinSymbolProcessor = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
 modular-android-application = { id = "modular.android.application", version = "unspecified" }
-modular-android-hiddenapi = { id = "modular.android.hiddenapi", version = "unspecified" }
 modular-android-library = { id = "modular.android.library", version = "unspecified" }
 modular-android-test = { id = "modular.android.test", version = "unspecified" }
 modular-compose = { id = "modular.compose", version = "unspecified" }

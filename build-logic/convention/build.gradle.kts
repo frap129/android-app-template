@@ -39,10 +39,6 @@ gradlePlugin {
             id = "modular.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
-        register("modularAndroidHiddenApis") {
-            id = "modular.android.hiddenapi"
-            implementationClass = "AndroidHiddenApisConventionPlugin"
-        }
         register("modularAndroidLibrary") {
             id = "modular.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"

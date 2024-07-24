@@ -15,7 +15,6 @@ development already implemented, such as:
 	- App modules
 	- Library modules
 	- Modules with Compose 
-	- Modules with Android Hidden Api access
 - Dynamic signing configuration
 
 And more to come
@@ -53,7 +52,6 @@ include plugins for creating new:
 - Application Modules
 - Library Modules
 - Test Modules
-- Hidden API Modules
 - Compose Modules
 
 These plugins can be combined to suit your needs, which the exception that a module can only be an
@@ -63,7 +61,6 @@ like:
 ```kotlin
 plugins {
     alias(libs.plugins.modular.android.library)
-    alias(libs.plugins.modular.android.hiddenapi)
     alias(libs.plugins.modular.android.test)
 }
 
