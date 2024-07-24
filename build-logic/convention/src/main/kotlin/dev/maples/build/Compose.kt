@@ -16,11 +16,6 @@ internal fun Project.configureCompose(commonExtension: BaseExtension) {
 
         val libs: VersionCatalog = extensions.getByType<VersionCatalogsExtension>().named("libs")
 
-        composeOptions {
-            kotlinCompilerExtensionVersion =
-                libs.findVersion("compose-compiler").get().toString()
-        }
-
         dependencies {
             add("implementation", platform(libs.findLibrary("compose.bom").get()))
             implementation(libs, "compose.ui")

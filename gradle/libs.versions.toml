@@ -3,18 +3,17 @@ accompanist-drawablepainter = "0.32.0"
 activity-compose = "1.9.0"
 agp = "8.1.4"
 androidx-test-ext-junit = "1.1.5"
-composeBom = "2024.01.00"
-compose-compiler = "1.5.10"
+composeBom = "2024.06.00"
 core-ktx = "1.13.1"
 datastore= "1.1.1"
 espresso-core = "3.5.1"
 junit = "4.13.2"
 koin = "3.5.6"
-kotlin = "1.9.22"
-kotlinx-coroutines-core = "1.7.3"
-ksp = "1.9.22-1.0.17"
+kotlin = "2.0.0"
+kotlinx-coroutines-core = "1.8.1"
+ksp = "2.0.0-1.0.23"
 ktlint = "12.1.1"
-lifecycle = "2.8.0"
+lifecycle = "2.8.3"
 navigation-compose = "2.7.7"
 timber = "5.0.1"
 dokka = "1.9.20"
@@ -54,6 +53,7 @@ util-timber = { module = "com.jakewharton.timber:timber", version.ref = "timber"
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 androidTest = { id = "com.android.test", version.ref = "agp" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 dokka = {id = "org.jetbrains.dokka", version.ref="dokka" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinSymbolProcessor = { id = "com.google.devtools.ksp", version.ref = "ksp" }

@@ -7,6 +7,7 @@ plugins {
     alias(libs.plugins.androidLibrary) apply false
     alias(libs.plugins.kotlinSymbolProcessor) apply false
     alias(libs.plugins.ktlint) apply false
+    alias(libs.plugins.compose.compiler) apply false
     alias(libs.plugins.dokka)
 }
 
