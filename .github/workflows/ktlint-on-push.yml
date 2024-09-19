@@ -26,5 +26,4 @@ jobs:
         env:
           BRANCH: ${{ github.ref }}
         run: |
-          git commit -a -m "chore: ktlint autoformat"
-          git push origin ${BRANCH}
+          git diff-index --quiet HEAD || (git commit -a -m "ci(autoformat): ktlint" &&  git diff-index --quiet HEAD)
