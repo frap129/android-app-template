@@ -18,3 +18,4 @@ rootProject.name = "AppTemplate"
 include(":app")
 include(":core:ui")
 include(":core:util")
+include(":core:lifecycle")

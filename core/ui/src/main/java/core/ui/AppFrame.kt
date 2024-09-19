@@ -1,4 +1,4 @@
-package dev.maples.template.ui
+package core.ui
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.slideInVertically
@@ -22,19 +22,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import core.ui.R
 import core.ui.model.data.Destination
 import core.ui.model.data.DestinationNavBarItem
 import core.ui.theme.AppTheme
 import org.koin.androidx.compose.KoinAndroidContext
 import org.koin.core.annotation.KoinExperimentalAPI
-
-/*
- * The destinations list holds Destination objects for all navigable screens
- * in the app. This list is consumed by NavHost to add the defined routes to
- * the NavGraph.
- */
-val destinations: List<Destination> = listOf()
 
 @OptIn(KoinExperimentalAPI::class)
 @Composable
@@ -57,7 +49,7 @@ fun AppFrame(content: @Composable () -> Unit) {
  * `destinations` list to be accessed.
  */
 @Composable
-fun App() {
+fun App(destinations: List<Destination>) {
     val navController = rememberNavController()
     val navBarState = rememberSaveable { (mutableStateOf(false)) }
 

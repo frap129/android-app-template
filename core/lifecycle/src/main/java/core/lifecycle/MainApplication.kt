@@ -1,4 +1,4 @@
-package dev.maples.template
+package core.lifecycle
 
 import android.app.Application
 import android.content.Context

@@ -1,36 +1,23 @@
 package dev.maples.template
 
-import android.app.PendingIntent
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.core.app.TaskStackBuilder
-import dev.maples.template.ui.App
+import core.lifecycle.TemplateActivity
+import core.ui.App
+import core.ui.model.data.Destination
 
-class MainActivity : ComponentActivity() {
+class MainActivity : TemplateActivity() {
+    /*
+     * The destinations list holds Destination objects for all navigable screens
+     * in the app. This list is consumed by NavHost to add the defined routes to
+     * the NavGraph.
+     */
+    private val destinations: List<Destination> = listOf()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            App()
-        }
-    }
-
-    override fun onNewIntent(intent: Intent) {
-        super.onNewIntent(intent)
-
-        // Resend intent updates as pending intents to fix navigation
-        val data: Uri? = intent.data
-        if (data?.scheme == "apptemplate") {
-            val pending: PendingIntent? = TaskStackBuilder.create(this).run {
-                addNextIntentWithParentStack(intent)
-                getPendingIntent(
-                    0,
-                    PendingIntent.FLAG_UPDATE_CURRENT.or(PendingIntent.FLAG_IMMUTABLE)
-                )
-            }
-            pending?.send()
+            App(destinations)
         }
     }
 }
