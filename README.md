@@ -1,10 +1,11 @@
 # Android App Template
-A starting point for creating a new android app repo, with many tools and patterns for modern Android
-development already implemented, such as:
+A starting point for creating a new android app repo, with many tools and patterns for modern
+Android development already implemented, such as:
 
 - Compose
 - Jetpack Navigation
-	- Made more modular using [Destinations](core/ui/src/main/java/core/ui/model/data/Destination.kt)
+	- Made more modular using
+[Destinations](core/ui/src/main/java/core/ui/model/data/Destination.kt)
 	- Deep link support
 - Koin dependency injection
 - ktlint and EditorConfig for code style
@@ -18,8 +19,6 @@ development already implemented, such as:
 - Dynamic signing configuration
 
 And more to come
-
-Check out the `example` branch for some simple implementations of modules.
 
 ## Getting Started
 
@@ -47,16 +46,16 @@ The `build-logic` directory is for code that is used in building your app, not a
 app itself.
 
 ##### convention
-The `build-logic:convention` module provides a set of gradle plugins that simplify creating new modules. These
-include plugins for creating new:
+The `build-logic:convention` module provides a set of gradle plugins that simplify creating new
+modules. These include plugins for creating new:
 - Application Modules
 - Library Modules
 - Test Modules
 - Compose Modules
 
 These plugins can be combined to suit your needs, which the exception that a module can only be an
-application or a library, not both. For example, if you are creating a new `core` module that relies
-on hidden system APIs and has tests for its functionality, the `build.gradle` would look something
+application or a library, not both. For example, if you are creating a new `core` module that has
+tests for its functionality, the `build.gradle` would look something
 like:
 ```kotlin
 plugins {
