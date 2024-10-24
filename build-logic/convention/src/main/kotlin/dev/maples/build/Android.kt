@@ -11,6 +11,9 @@ import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.api.logging.LogLevel
 import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.getByType
+import org.jetbrains.kotlin.gradle.dsl.kotlinExtension
+
+private val javaVersion = JavaVersion.VERSION_17
 
 internal fun configureAndroid(target: Project, commonExtension: CommonExtension<*, *, *, *, *>) {
     commonExtension.apply {
@@ -26,9 +29,11 @@ internal fun configureAndroid(target: Project, commonExtension: CommonExtension<
         }
 
         compileOptions {
-            sourceCompatibility = JavaVersion.VERSION_17
-            targetCompatibility = JavaVersion.VERSION_17
+            sourceCompatibility = javaVersion
+            targetCompatibility = javaVersion
         }
+
+        target.kotlinExtension.jvmToolchain(javaVersion.ordinal + 1)
 
         buildFeatures {
             buildConfig = true
