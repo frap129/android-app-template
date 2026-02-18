@@ -17,6 +17,7 @@
 import com.android.build.api.dsl.TestExtension
 import dev.maples.build.androidTestImplementation
 import dev.maples.build.configureAndroidCommon
+import dev.maples.build.configureSpotlessForAndroid
 import dev.maples.build.debugImplementation
 import dev.maples.build.testImplementation
 import org.gradle.api.Plugin
@@ -45,6 +46,8 @@ class AndroidTestConventionPlugin : Plugin<Project> {
                 debugImplementation(libs, "compose.ui.tooling")
                 debugImplementation(libs, "test.ui.testManifest")
             }
+
+            configureSpotlessForAndroid()
         }
     }
 }

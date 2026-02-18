@@ -8,7 +8,7 @@ Android development already implemented, such as:
 [Destinations](core/ui/src/main/java/core/ui/model/data/Destination.kt)
 	- Deep link support
 - Koin dependency injection
-- ktlint and EditorConfig for code style
+- Spotless (ktlint engine) and EditorConfig for code style
     - Idea/Studio run configurations for checking and autoformat included
 - Timber for logging
 - Multi-module project structure

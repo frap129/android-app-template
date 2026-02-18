@@ -34,6 +34,7 @@ kotlin {
 dependencies {
     compileOnly(libs.android.tools.build.gradle.plugin)
     compileOnly(libs.kotlin.gradle.plugin)
+    compileOnly(libs.spotless.gradlePlugin)
 }
 
 gradlePlugin {

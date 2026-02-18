@@ -17,6 +17,7 @@
 import com.android.build.api.dsl.LibraryExtension
 import dev.maples.build.configureAndroidCommon
 import dev.maples.build.configureAndroidDependencies
+import dev.maples.build.configureSpotlessForAndroid
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
@@ -33,6 +34,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
             }
 
             configureAndroidDependencies()
+            configureSpotlessForAndroid()
         }
     }
 }
