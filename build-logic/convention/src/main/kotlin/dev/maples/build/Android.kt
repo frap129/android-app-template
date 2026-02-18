@@ -13,7 +13,7 @@ import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.getByType
 import org.jetbrains.kotlin.gradle.dsl.kotlinExtension
 
-private val javaVersion = JavaVersion.VERSION_17
+private val javaVersion = JavaVersion.VERSION_21
 
 internal fun configureAndroid(target: Project, commonExtension: CommonExtension<*, *, *, *, *>) {
     commonExtension.apply {
