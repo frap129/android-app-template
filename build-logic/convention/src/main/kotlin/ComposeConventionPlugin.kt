@@ -14,11 +14,13 @@
  *   limitations under the License.
  */
 
-import com.android.build.gradle.BaseExtension
+import com.android.build.api.dsl.ApplicationExtension
+import com.android.build.api.dsl.LibraryExtension
+import com.android.build.api.dsl.TestExtension
 import dev.maples.build.configureCompose
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.kotlin.dsl.getByType
+import org.gradle.kotlin.dsl.configure
 
 class ComposeConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
@@ -27,8 +29,24 @@ class ComposeConventionPlugin : Plugin<Project> {
                 apply("org.jetbrains.kotlin.plugin.compose")
             }
 
-            val extension = extensions.getByType<BaseExtension>()
-            configureCompose(extension)
+            // Configure Compose on whichever Android plugin is present
+            pluginManager.withPlugin("com.android.application") {
+                extensions.configure<ApplicationExtension> {
+                    configureCompose(this)
+                }
+            }
+
+            pluginManager.withPlugin("com.android.library") {
+                extensions.configure<LibraryExtension> {
+                    configureCompose(this)
+                }
+            }
+
+            pluginManager.withPlugin("com.android.test") {
+                extensions.configure<TestExtension> {
+                    configureCompose(this)
+                }
+            }
         }
     }
 }

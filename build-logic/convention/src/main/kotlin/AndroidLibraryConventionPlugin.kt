@@ -14,14 +14,12 @@
  *   limitations under the License.
  */
 
-import com.android.build.gradle.BaseExtension
-import com.android.build.gradle.LibraryExtension
-import dev.maples.build.configureAndroid
-import dev.maples.build.configureAndroidBase
+import com.android.build.api.dsl.LibraryExtension
+import dev.maples.build.configureAndroidCommon
+import dev.maples.build.configureAndroidDependencies
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
-import org.gradle.kotlin.dsl.getByType
 
 class AndroidLibraryConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
@@ -31,10 +29,11 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
                 apply("org.jetbrains.kotlin.android")
             }
 
-            configureAndroidBase(extensions.getByType<BaseExtension>())
             extensions.configure<LibraryExtension> {
-                configureAndroid(target, this)
+                configureAndroidCommon(this)
             }
+
+            configureAndroidDependencies()
         }
     }
 }
