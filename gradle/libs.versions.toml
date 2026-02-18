@@ -12,6 +12,7 @@ junit = "4.13.2"
 koin = "4.1.1"
 kotlin = "2.3.10"
 kotlinx-coroutines-core = "1.10.2"
+kgp = "2.2.1"
 ksp = "2.3.2"
 ktlint = "14.0.1"
 lifecycle = "2.10.0"
@@ -55,7 +56,7 @@ androidLibrary = { id = "com.android.library", version.ref = "agp" }
 androidTest = { id = "com.android.test", version.ref = "agp" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 dokka = {id = "org.jetbrains.dokka", version.ref="dokka" }
-kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinGradlePlugin = { id = "org.jetbrains.kotlin", version.ref="kgp" }
 kotlinSymbolProcessor = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
 modular-android-application = { id = "modular.android.application", version = "unspecified" }
