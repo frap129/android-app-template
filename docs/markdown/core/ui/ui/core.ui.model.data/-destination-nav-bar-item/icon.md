@@ -2,5 +2,5 @@
 
 # icon
 
-[androidJvm]\
-val [icon](icon.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+[release]\
+val [icon](icon.md): Int

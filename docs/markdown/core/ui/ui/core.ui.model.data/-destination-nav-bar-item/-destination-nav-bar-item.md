@@ -2,7 +2,7 @@
 
 # DestinationNavBarItem
 
-[androidJvm]\
-constructor(icon: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+[release]\
+constructor(icon: Int, title: String)
 
 Creates a new DestinationNavBarItem

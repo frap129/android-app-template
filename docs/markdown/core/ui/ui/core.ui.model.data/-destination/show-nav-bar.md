@@ -2,5 +2,5 @@
 
 # showNavBar
 
-[androidJvm]\
-open val [showNavBar](show-nav-bar.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false
+[release]\
+open val [showNavBar](show-nav-bar.md): Boolean

@@ -2,5 +2,5 @@
 
 # navBarItem
 
-[androidJvm]\
-open val [navBarItem](nav-bar-item.md): [DestinationNavBarItem](../-destination-nav-bar-item/index.md)? = null
+[release]\
+open val [navBarItem](nav-bar-item.md): [DestinationNavBarItem](../-destination-nav-bar-item/index.md)?

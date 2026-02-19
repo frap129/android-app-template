@@ -2,5 +2,5 @@
 
 # arguments
 
-[androidJvm]\
-open val [arguments](arguments.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[NamedNavArgument](https://developer.android.com/reference/kotlin/androidx/navigation/NamedNavArgument.html)&gt;
+[release]\
+open val [arguments](arguments.md): List&lt;NamedNavArgument&gt;

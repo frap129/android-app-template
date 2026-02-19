@@ -2,7 +2,7 @@
 
 # DestinationNavBarItem
 
-open class [DestinationNavBarItem](index.md)(val icon: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+open class [DestinationNavBarItem](index.md)(val icon: Int, val title: String)
 
 A &quot;Destination&quot; represents a screen or flow that can be navigated to through the NavController. This class should include any data necessary for registering the destination in the NavHost, including resources needed for setting up a navigation bar.
 
@@ -16,11 +16,11 @@ A &quot;Destination&quot; represents a screen or flow that can be navigated to t
 
 | | |
 |---|---|
-| [DestinationNavBarItem](-destination-nav-bar-item.md) | [androidJvm]<br>constructor(icon: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))<br>Creates a new DestinationNavBarItem |
+| [DestinationNavBarItem](-destination-nav-bar-item.md) | [release]<br>constructor(icon: Int, title: String)<br>Creates a new DestinationNavBarItem |
 
 ## Properties
 
 | Name | Summary |
 |---|---|
-| [icon](icon.md) | [androidJvm]<br>val [icon](icon.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>resource int of the icon for this destination |
-| [title](title.md) | [androidJvm]<br>val [title](title.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>user-facing name of this destination |
+| [icon](icon.md) | [release]<br>val [icon](icon.md): Int<br>resource int of the icon for this destination |
+| [title](title.md) | [release]<br>val [title](title.md): String<br>user-facing name of this destination |

@@ -2,5 +2,5 @@
 
 # MainApplication
 
-[androidJvm]\
+[release]\
 constructor()

@@ -6,4 +6,4 @@
 
 | Name | Summary |
 |---|---|
-| [launchInBackground](launch-in-background.md) | [androidJvm]<br>fun [launchInBackground](launch-in-background.md)(block: suspend CoroutineScope.() -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)): Job |
+| [launchInBackground](launch-in-background.md) | [release]<br>fun [launchInBackground](launch-in-background.md)(block: suspend CoroutineScope.() -&gt; Unit): Job |

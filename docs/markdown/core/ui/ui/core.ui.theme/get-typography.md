@@ -2,8 +2,8 @@
 
 # getTypography
 
-[androidJvm]\
+[release]\
 
-@[Composable](https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html)
+@Composable
 
-fun [getTypography](get-typography.md)(): [Typography](https://developer.android.com/reference/kotlin/androidx/compose/material3/Typography.html)
+fun [getTypography](get-typography.md)(): Typography

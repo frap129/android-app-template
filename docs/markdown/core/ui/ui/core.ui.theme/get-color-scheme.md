@@ -2,5 +2,5 @@
 
 # getColorScheme
 
-[androidJvm]\
-fun [getColorScheme](get-color-scheme.md)(accent: [Color](https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html), backgroundLight: [Color](https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html), backgroundMid: [Color](https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html), backgroundDark: [Color](https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html)): [ColorScheme](https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme.html)
+[release]\
+fun [getColorScheme](get-color-scheme.md)(accent: Color, backgroundLight: Color, backgroundMid: Color, backgroundDark: Color): ColorScheme

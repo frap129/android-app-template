@@ -2,5 +2,5 @@
 
 # TemplateActivity
 
-[androidJvm]\
+[release]\
 constructor()

@@ -2,8 +2,8 @@
 
 # App
 
-[androidJvm]\
+[release]\
 
-@[Composable](https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html)
+@Composable
 
-fun [App](-app.md)(destinations: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Destination](../core.ui.model.data/-destination/index.md)&gt;)
+fun [App](-app.md)(destinations: List&lt;[Destination](../core.ui.model.data/-destination/index.md)&gt;)

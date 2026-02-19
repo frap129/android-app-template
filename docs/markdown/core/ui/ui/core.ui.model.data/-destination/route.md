@@ -2,5 +2,5 @@
 
 # route
 
-[androidJvm]\
-open val [route](route.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+[release]\
+open val [route](route.md): String
