@@ -51,6 +51,7 @@ test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core",
 test-junit = { group = "junit", name = "junit", version.ref = "junit" }
 util-timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 spotless-gradlePlugin = { group = "com.diffplug.spotless", name = "spotless-plugin-gradle", version.ref = "spotless" }
+dokka-gradle-plugin = { group = "org.jetbrains.dokka", name = "dokka-gradle-plugin", version.ref = "dokka" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -61,7 +62,9 @@ dokka = {id = "org.jetbrains.dokka", version.ref="dokka" }
 kotlinGradlePlugin = { id = "org.jetbrains.kotlin", version.ref="kgp" }
 kotlinSymbolProcessor = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
-modular-android-application = { id = "modular.android.application", version = "unspecified" }
-modular-android-library = { id = "modular.android.library", version = "unspecified" }
-modular-android-test = { id = "modular.android.test", version = "unspecified" }
-modular-compose = { id = "modular.compose", version = "unspecified" }
+modular-android-application = { id = "modular.android.application" }
+modular-android-library = { id = "modular.android.library" }
+modular-android-test = { id = "modular.android.test" }
+modular-compose = { id = "modular.compose" }
+modular-dokka = { id = "modular.dokka" }
+modular-dokka-gfm = { id = "modular.dokka.gfm" }

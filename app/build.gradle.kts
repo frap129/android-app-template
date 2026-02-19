@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.modular.android.application)
     alias(libs.plugins.modular.compose)
+    alias(libs.plugins.modular.dokka)
 }
 
 android {

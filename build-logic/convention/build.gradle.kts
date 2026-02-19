@@ -35,6 +35,7 @@ dependencies {
     compileOnly(libs.android.tools.build.gradle.plugin)
     compileOnly(libs.kotlin.gradle.plugin)
     compileOnly(libs.spotless.gradlePlugin)
+    compileOnly(libs.dokka.gradle.plugin)
 }
 
 gradlePlugin {
@@ -57,6 +58,14 @@ gradlePlugin {
         register("modularCompose") {
             id = "modular.compose"
             implementationClass = "ComposeConventionPlugin"
+        }
+        register("modularDokka") {
+            id = "modular.dokka"
+            implementationClass = "DokkaConventionPlugin"
+        }
+        register("modularDokkaGfm") {
+            id = "modular.dokka.gfm"
+            implementationClass = "DokkaGfmFormatPlugin"
         }
     }
 }

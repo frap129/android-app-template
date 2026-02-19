@@ -1,5 +1,3 @@
-import org.jetbrains.dokka.gradle.DokkaTask
-
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
     alias(libs.plugins.androidApplication) apply false
@@ -8,31 +6,20 @@ plugins {
     alias(libs.plugins.spotless) apply false
     alias(libs.plugins.compose.compiler) apply false
     alias(libs.plugins.dokka)
+    alias(libs.plugins.modular.dokka.gfm)
 }
 
-subprojects {
-    apply(plugin = "org.jetbrains.dokka")
+dokka {
+    dokkaPublications.html {
+        outputDirectory.set(rootProject.layout.projectDirectory.dir("docs/html"))
+    }
+    dokkaPublications.named("markdown") {
+        outputDirectory.set(rootProject.layout.projectDirectory.dir("docs/markdown"))
+    }
 }
 
-subprojects {
-    apply(plugin = "org.jetbrains.dokka")
-}
-
-tasks.register("generateDocs") {}
-
-tasks.getByName("generateDocs") {
-    dependsOn(tasks.dokkaHtmlMultiModule)
-    dependsOn(tasks.dokkaGfmMultiModule)
-}
-
-tasks.withType<DokkaTask>().configureEach {
-    notCompatibleWithConfigurationCache("https://github.com/Kotlin/dokka/issues/2231")
-}
-
-tasks.dokkaHtmlMultiModule {
-    outputDirectory.set(rootProject.file("docs/html"))
-}
-
-tasks.dokkaGfmMultiModule {
-    outputDirectory.set(rootProject.file("docs/markdown"))
+tasks.register("generateDocs") {
+    group = "documentation"
+    description = "Generate API docs (HTML + Markdown)."
+    dependsOn(tasks.named("dokkaGenerate"))
 }
