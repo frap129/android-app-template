@@ -17,3 +17,4 @@ keystore.properties
 *.bin
 core/build
 .kotlin/
+kls_database.db
