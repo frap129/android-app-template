@@ -22,12 +22,6 @@ class DokkaConventionPlugin : Plugin<Project> {
         project.pluginManager.apply("org.jetbrains.dokka")
         project.pluginManager.apply("modular.dokka.gfm")
         val dokkaExtension: DokkaExtension = project.extensions.getByType(DokkaExtension::class.java)
-        val mainSourceSet = dokkaExtension.dokkaSourceSets.maybeCreate("main")
-        mainSourceSet.suppress.set(false)
-        mainSourceSet.sourceRoots.from(
-            project.file("src/main/java"),
-            project.file("src/main/kotlin")
-        )
         dokkaExtension.dokkaSourceSets.configureEach {
             documentedVisibilities.set(setOf(VisibilityModifier.Public))
             suppressGeneratedFiles.set(true)
